@@ -3,13 +3,16 @@ Logistics performance analytics dashboard in Power BI covering fleet maintenance
 Logistics Performance Analytics Dashboard
 Tools: Excel, Power Query, DAX, Power BI
 Business problem: A logistics company wants visibility into fleet maintenance costs, vehicle utilization, driver performance, and customer revenue so it can cut downtime and improve on-time delivery.
+
 **Questions I set out to answer**
 1. Which vehicle makes and maintenance types drive the highest costs and downtime?
 2. How much of the fleet is idle, and what does that cost?
 3. Why is the on-time rate only 44.6%, and which drivers perform best?
 4. Which customer types and load types generate the most revenue?
+
 **Data source**
 Dataset provided through my data analytics course training.
+
 **Process**
 1. Excel: Combined multiple sheets into one workbook and converted each dataset into an Excel Table.
 2. Power Query: Cleaned and transformed the data. [fixed data types, removed duplicates, handled null values, renamed columns.]
@@ -18,6 +21,7 @@ Dataset provided through my data analytics course training.
 5. Dashboard: Built four pages: Fleet Maintenance, Fleet Performance, Driver Performance, and Customer Analysis.
 Data validation
 I noticed fleet revenue by asset (262M) didn't match total customer revenue (538M). I traced each figure to its source table, confirmed they use different definitions, then relabeled the measures and added footnotes to prevent misreading. I also corrected an Average MPG measure that was summing instead of averaging.
+
 **Key insights and recommendations**
 • On-time rate is 44.6%,so more than half of deliveries are late. Break late deliveries down by driver, load type, and customer to find where delays concentrate. Then set an on-time target (e.g. 70%) and have lower-performing drivers learn from the top performers' routes and scheduling.
 • Fleet utilization is 76.67%, leaving 28 vehicles idle, so more than half of deliveries are late. Break late deliveries down by driver, load type, and customer to find where delays concentrate. Then set an on-time target (e.g. 70%) and have lower-performing drivers learn from the top performers' routes and scheduling..
