@@ -13,13 +13,20 @@ Questions I set out to answer
 
 **Data source**
 Dataset provided through my data analytics course training.
-Process
+
+**Process**
+
 1. Excel: Combined multiple sheets into one workbook and converted each dataset into an Excel Table.
+
 2. Power Query: Cleaned and transformed the data. Fixed data types, removed 26 duplicate rows, and fixed date formats.
+
 3. Data model: Modeled 14 related tables, with loads and trips at the center, linked to driver, truck, trailer, customer, and route tables (details below).
+
 4. DAX: Created measures including On-time Rate, Active Drivers, Preventive Maintenance Count, and Preventive Rate (formulas below)..
+
 5. Dashboard: Built four pages: Fleet Maintenance, Fleet Performance, Driver Performance, and Customer Analysis.
-Data model
+**Data model**
+
 The model has 14 tables: 6 reference tables, 6 transaction tables, and 2 monthly summary tables. Loads and trips are the core of it. Each load belongs to one customer and one route, and each trip links a load to a driver, a truck, and a trailer.
 Table
 Type
@@ -115,15 +122,16 @@ Many-to-one
 safety_incidents
 trips
 Many-to-one
-Key DAX measures
+
+**Key DAX measures**
+
 On-time Rate: the average monthly on-time delivery rate across driver records, updating with any filter.
+
 On-time Rate = AVERAGE('driver_monthly_metrics'[on_time_delivery_rate])
+
 Active Drivers: CALCULATE overrides the filter context so only drivers with an Active employment status are counted.
-Active Drivers =
-CALCULATE(
-    COUNTROWS('drivers'),
-    'drivers'[employment_status] = "Active"
-)
+Active Drivers = CALCULATE(COUNTROWS('drivers'),'drivers'[employment_status] = "Active")
+
 Preventive Maintenance Count: the number of maintenance records of the preventive type.
 Preventive Maintenance Count =
 CALCULATE(
