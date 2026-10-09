@@ -112,12 +112,12 @@ I noticed fleet revenue by asset (262M) didn't match total customer revenue (538
 Screenshots of all four dashboard pages are included in this repository.
 
 ### Fleet Maintenance
-![Fleet Maintenance Dashboard](fleet-maintenance-dashboard.png)
+![Fleet Maintenance Dashboard](fleet-maintenance-dashboard.png.png)
 ### Fleet Performance
-![Fleet Performance Dashboard](images/fleet-performance-dasboard.png)
+![Fleet Performance Dashboard](images/fleet-performance-dasboard.png.png)
 
 ### Driver Performance
-![Driver Performance Dashboard](images/driver-performance-dashboard.png)
+![Driver Performance Dashboard](images/driver-performance-dashboard.png.png)
 
 ### Customer Analysis
-![Customer Analysis Dashboard](images/customer-analysis-dashboard.png)
+![Customer Analysis Dashboard](images/customer-analysis-dashboard.png.png)
